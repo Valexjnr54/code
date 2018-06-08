@@ -1,13 +1,3 @@
-
-<?php
-    session_start();
-
-?>
-
-<?php
-    session_start();
-
-?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -18,7 +8,7 @@
 
         <link rel="shortcut icon" href="assets/images/favicon_1.ico">
 
-        <title>Victor's Agency | Official Website</title>
+        <title>Victor's Agency || Official Website</title>
 
         <!--Morris Chart CSS -->
         <link rel="stylesheet" href="assets/plugins/morris/morris.css">
@@ -75,17 +65,6 @@
                                     <a href="#" id="btn-fullscreen" class="waves-effect waves-light"><i class="icon-size-fullscreen"></i></a>
                                 </li>
                                 
-                                <li class="dropdown top-menu-item-xs">
-                                   
-                                    <a href="" class="dropdown-toggle profile waves-effect waves-light" data-toggle="dropdown" aria-expanded="true"><img src="assets/images/users/ebuka.jpg" alt="user-img" class="img-circle"> </a>
-                                    <ul class="dropdown-menu">
-                                        <li><a href="profile.php"><i class="ti-user m-r-10 text-custom"></i> Profile</a></li>
-                                        <li><a href="javascript:void(0)"><i class="ti-settings m-r-10 text-custom"></i> Settings</a></li>
-                                        <li><a href="javascript:void(0)"><i class="ti-lock m-r-10 text-custom"></i> Lock screen</a></li>
-                                        <li class="divider"></li>
-                                        <li><a href="../logout.php"><i class="ti-power-off m-r-10 text-danger"></i> Logout</a></li>
-                                    </ul>
-                                </li>
                             </ul>
                         </div>
                         <!--/.nav-collapse -->
@@ -111,7 +90,7 @@
                             </li>
 
                             <li class="has_sub">
-                                <a href="profile.php" class="waves-effect"><i class="ti-user"></i> <span> Profile </span> <span class="menu-arrow"></span></a>
+                                <a href="view_users.php" class="waves-effect"><i class="ti-user"></i> <span> View Users </span> <span class="menu-arrow"></span></a>
                                 
                             </li>
 
@@ -123,8 +102,13 @@
                                 </ul>
                             </li>
 
+
                             <li class="has_sub">
-                                <a href="javascript:void(0);" class="waves-effect"><i class="ti-settings"></i> <span> Settings </span> </a>
+                                <a href="#" class="waves-effect"><i class="ti-settings"></i> <span> Settings </span> </a>
+                            </li>
+
+                            <li class="has_sub">
+                                <a href="../logout.php" class="waves-effect"><i class="ti-mo"></i> <span> Logout </span> </a>
                             </li>
 
                         </ul>
@@ -148,13 +132,7 @@
                         <!-- Page-Title -->
                         <div class="row">
                             <div class="col-sm-12">
-                                <h4 class="page-title"> Hi <?php 
-                                            if (isset($_SESSION['username'])) {
-                                                # code...
-                                                echo $_SESSION['username'];
-                                            }
-                                    ?></h4>
-                                <p class="text-muted page-title-alt">Welcome to Your Dashboard</p>
+                                <h4 class="page-title">Admin Dashboard</h4>
                             </div>
                         </div>
 
@@ -162,32 +140,8 @@
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="card-box">
-                                    
-                              <p class="text-muted m-b-30 font-13">
-                  </p>
 
-                                    <ul class="sortable-list taskList list-unstyled" id="upcoming">
-                                        <li class="task-warning" id="task1">
-                                            <div class="checkbox checkbox-custom checkbox-single pull-right">
-                                                <input type="checkbox" aria-label="Single checkbox Two">
-                                                <label></label>
-                                            </div>
-                                            <a href="#">
-                                            When an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                                            </a>
-                                            <p></p>
-                                        </li>
-                                        <li class="task-success" id="task2">
-                                            <div class="checkbox checkbox-custom checkbox-single pull-right">
-                                                <input type="checkbox" aria-label="Single checkbox Two">
-                                                <label></label>
-                                            </div>
-                                            <a href="#">
-                                            When an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                                            </a>
-                                            <p></p>
-                                        </li>
-                                    </ul>
+                                    
                                 </div>
                             </div>
     
